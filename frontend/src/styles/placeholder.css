@@ -1,0 +1,49 @@
+/* Empty-state placeholder */
+.placeholder-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  text-align: center;
+  padding: 2rem;
+  animation: fadeIn 0.6s ease;
+}
+
+.placeholder-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+.placeholder-text {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #c4b5fd;
+  margin: 0 0 0.5rem;
+}
+
+.placeholder-subtext {
+  font-size: 0.9rem;
+  color: #7c7a9c;
+  margin: 0;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (max-width: 600px) {
+  .placeholder-text {
+    font-size: 1.1rem;
+  }
+  .placeholder-icon {
+    font-size: 2.5rem;
+  }
+}
